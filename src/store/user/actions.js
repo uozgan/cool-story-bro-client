@@ -60,6 +60,7 @@ export const login = (email, password) => {
         email,
         password
       });
+      console.log("Kelley:", response.data);
 
       dispatch(loginSuccess(response.data));
       dispatch(showMessageWithTimeout("success", false, "welcome back!", 1500));
